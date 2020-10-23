@@ -1,0 +1,11 @@
+on: [push, pull_request]
+
+name: 'ShellCheck'
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run ShellCheck
+      uses: ludeeus/action-shellcheck@master
